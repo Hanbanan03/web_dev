@@ -1,0 +1,26 @@
+ body{
+    background-color: hwb(328 76% 9%);
+            }
+            h1{
+                color:cornflowerblue;
+                text-align: center;
+                font-family:cursive
+            }
+            h2{
+                color:cornflowerblue;
+                font-family:cursive
+            }
+            #nails-one{
+                width: 200px;
+                height: 200px;
+            }
+            #nails-two{
+                width:200px;
+                height:200px;
+            }
+            p{
+                font-family: cursive;
+            }
+            p{
+                font-family: cursive;
+            }
