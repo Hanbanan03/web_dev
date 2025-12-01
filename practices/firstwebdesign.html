@@ -22,7 +22,7 @@
             }
             #nails-two{
                 width:200px;
-                height:200px;
+                height:250px;
             }
             p{
                 font-family: cursive;
@@ -70,21 +70,59 @@
               on my own with my own creativity!</p>
         <div class= "content-1">
         <div class=" image-container">
-        <img src="https://withhouna.com/wp-content/uploads/2025
-        /03/Funky-Blue-April-Nails-1024x1024.jpg" alt="error" 
+        <img src="https://withhouna.com/wp-content/uploads/2025/03/Funky-Blue-April-Nails-1024x1024.jpg" alt="error" 
         id="nails-one">
-        <img src="https://m.media-amazon.com/images/I/71oceOA
-        +TLL._AC_UF1000,1000_QL80_.jpg" alt="error" id="nails-two">
+        <img src="https://www.livethatglow.com/wp-content/uploads/2024/02/baby-pink-and-white-nails.jpg" alt="error" id="nails-two">
         </div>
         <dl>
             <dt>Beginner supply reccomendations!</dt>
             <dd>gel nail polish</dd>
             <dd>small design brushes</dd>
             <dd>dotting tool</dd>
-            <dd>a pallete</dd>
+            <dd>a palete</dd>
         </dl>
         <p>I use Pinterest to get a lot of my nail design ideas
              heres the link!</p>
         <a href="https://www.pinterest.com/">Pinterest website</a>
+
+        <div id="extrastuff" style="display:none; margin-top:20px;">
+        <p style="font-family:cursive;">
+        Here's an extra nail design tip! One of the best ways to improve is to
+        practice clean lines and work slowly so your designs look sharp.
+        </p>
+        <img id="extrapic"
+         src="https://s3-media0.fl.yelpcdn.com/bphoto/aQMfrYS6In5L4CZMlE1l2A/348s.jpg" width="200" alt="error">
+        </div>
+        <button id="button" style="margin-top:15px; font-family:cursive; background-color: 
+        hwb(328 76% 9%); padding: 10px 20px">
+        Show More
+        </button>
+        <script>
+        document.getElementById("button").onclick = function() {
+        let content = document.getElementById("extrastuff");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+            document.getElementById("button").innerText = "Show Less";
+        } 
+        else {
+            content.style.display = "none";
+            document.getElementById("button").innerText = "Show More";
+        }
+        };
+        </script>
+        <img id="hovernails"
+        src="https://s3-media0.fl.yelpcdn.com/bphoto/aQMfrYS6In5L4CZMlE1l2A/348s.jpg"
+        width="200">
+        <script>
+        let nailPic = document.getElementById("hovernails");
+
+        extrapic.onmouseover = function() {
+        extrapic.src = "https://parade.com/.image/w_3840,q_auto:good,c_limit/MjA3MjkyODEyNjc1MzkyOTI3/short%2520nails%2520inspo.jpg";
+        };
+
+        extrapic.onmouseout = function() {
+        extrapic.src = "https://s3-media0.fl.yelpcdn.com/bphoto/aQMfrYS6In5L4CZMlE1l2A/348s.jpg";
+        };
+        </script>
     </body>
 </html>
