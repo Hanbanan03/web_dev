@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+    <title>Document</title>
+    <link rel=" "stylesheet" href="hide.css">
+    <script>
+        showing="none"
+        function show(){
+            if(showing=="none"){
+                document.getElementById("hidden").style.display="block"
+                showing="block"
+                document.getElementById("button").innerHTML="show less"
+            }else{
+                document.getElementById("hidden").style.display="none"
+                showing="none"
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <h1 onmouseover= {show()}> Cats</h1>
+        <div id="content-wrapper">
+        <div id="left">
+        <div id="hidden">
+        <img id="hidden" src="https://pethelpful.com/.image/w_3840,q_auto:good,c_limit/NDowMDAwMDAwMDAwMTExMjI4/orange-tabby-sleeping-111228.jpg?arena_f_auto" width="400"
+        </div>
+
+        <p>I love cats. I think they are adorable and so cute. I have a cat of my own named Sunny. 
+        She is fat and mean and orange but I still love her.</p>
+
+        <p>We got my cat about 9 years ago from m aunt and uncle who got her from their grandparents who
+             found her in their chicken coop eating the chickens eggs. Kind of a long twisted story but
+            now we have her and she is quite old now but we still kove her no matter what. These are the
+             reasons I love her</p>
+
+            <ol>
+                <li>she is very cute</li>
+                <li>she might cuddle with you if youre lucky</li>
+                <li>she kinda likes me</li>
+            </ol>
+    </body>
+</html>
