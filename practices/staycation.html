@@ -5,7 +5,8 @@
         <title>Bear Lake</title>
         <meta charset="UTF-8">
         <style>
-                body{background-color: lightcyan;
+                body{
+                background-color: lightcyan;
                 }
                 #header1{
                  color:coral;
@@ -15,11 +16,12 @@
                  padding-left: 20px;
                 }
                 #info{
+                 display: grid;
                  color:black;
                  font-family:cursive;
                  margin-bottom: 15px;
                  padding-left: 20px;
-                 align-items: left;
+                 justify-items: left;
                 }
                 #header2{
                  font-family: cursive;
@@ -30,12 +32,21 @@
                  font-family: cursive;
                  margin-bottom: 15px;
                  color:black;
+                 padding-right: 400px;
+                }
+                .pictures{
+                 display: grid;
+                 grid-template-columns: 2fr;
+                 grid-gap: 10px;
+                 align-self: start;
+                 justify-items: right;
+                 margin-bottom: 15px;
                 }
         </style>
     </head>
     <body> <div id="header1"> 
         <h1>Bear Lake</h1></div>
-        <div id= "info"><p>Bear lake is a beutiful place on the border of Utah and Idaho and is graet for a staycation if 
+        <div id= "info"><p>Bear lake is a beutiful place on the border of Utah and Idaho and is great for a staycation if 
             you're near those areas! When I go there for stacations I enjoy paddleboarding on the cool waters
             and having picnics by the beach. It is so much fun to get shakes from there famous places!</p></div>
         <div id="header2"><h2>Local Attractions</h2></div>
@@ -46,8 +57,8 @@
             <li>Have a picnic by the beach</li>
             <li>Shop at the cute local shops</li>
         </ul></div>
-        <img src="https://bearlake.org/wp-content/uploads/zipz-restaurant-garden-city-utah-640x444.jpg" alt="Bear Lake Shake" width="400">
-        <img src="https://koa.com/content/campgrounds/bear-lake-trail-side/heroitems/44157heroitemsa30598ad-c875-45d1-a895-ceb8ef2199d7.jpg" alt="Bear Lake view" width="400">
-        <img src="https://www.sltrib.com/resizer/yH5twgQbWnP_IWQ-k1v8jE4wSDc=/arc-anglerfish-arc2-prod-sltrib/public/GU6JYM74PNHRLEA7ZE3G57QQGU.jpg" alt="Bear Lake Beach" width="400">
+        <div class= "pictures"><img src="https://bearlake.org/wp-content/uploads/zipz-restaurant-garden-city-utah-640x444.jpg" alt="Bear Lake Shake" width="300">
+        <img src="https://koa.com/content/campgrounds/bear-lake-trail-side/heroitems/44157heroitemsa30598ad-c875-45d1-a895-ceb8ef2199d7.jpg" alt="Bear Lake view" width="300">
+        <img src="https://www.sltrib.com/resizer/yH5twgQbWnP_IWQ-k1v8jE4wSDc=/arc-anglerfish-arc2-prod-sltrib/public/GU6JYM74PNHRLEA7ZE3G57QQGU.jpg" alt="Bear Lake Beach" width="300"></div>
     </body>
 </html>
