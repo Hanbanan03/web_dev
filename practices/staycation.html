@@ -13,52 +13,109 @@
                  text-align: center;
                  font-family:cursive;
                  margin-bottom: 15px;
-                 padding-left: 20px;
                 }
                 #info{
-                 display: grid;
                  color:black;
                  font-family:cursive;
-                 margin-bottom: 15px;
-                 padding-left: 20px;
-                 justify-items: left;
+                 margin-bottom: 20px;
                 }
                 #header2{
                  font-family: cursive;
-                 margin-bottom: 15px;
+                 margin-bottom: 10px;
                  color:coral;
                 }
                 #list{
                  font-family: cursive;
                  margin-bottom: 15px;
                  color:black;
-                 padding-right: 400px;
+                 padding-left: 20px;
+                 width: 250px;
+                }
+                .list ul {
+                 margin-top:0;
+                 padding-left: 20px;
                 }
                 .pictures{
-                 display: grid;
-                 grid-template-columns: 2fr;
-                 grid-gap: 10px;
-                 align-self: start;
-                 justify-items: right;
+                 display: flex;
+                 flex-direction: column;
+                 gap: 15px;
+                 align-items: flex-end;
+                 justify-items: center;
                  margin-bottom: 15px;
+                }
+                .pictures img{
+                    width: 250px;
+                    margin-bottom: 15px;
+                }
+                .wrapper{
+                 display: flex;
+                 justify-content:center;
+                 gap: 60px;
+                 align-items: flex-start;
+                 padding: 20px;
+                }
+                .left {
+                    width: 320px;
+                }
+                .hover{
+                    width: 250px;
+                    transition: transform 0.3s ease;
+                }
+                .hover:hover{
+                    transform: scale(1.1);
+                }
+                #extra{
+                    font-family: cursive;
                 }
         </style>
     </head>
     <body> <div id="header1"> 
         <h1>Bear Lake</h1></div>
-        <div id= "info"><p>Bear lake is a beutiful place on the border of Utah and Idaho and is great for a staycation if 
+        <div class="wrapper">
+        <div class="left">
+        <div id= "info">
+            <p>Bear lake is a beutiful place on the border of Utah and Idaho and is great for a staycation if 
             you're near those areas! When I go there for stacations I enjoy paddleboarding on the cool waters
-            and having picnics by the beach. It is so much fun to get shakes from there famous places!</p></div>
+            and having picnics by the beach. It is so much fun to get shakes from there famous places!</p>
+        </div>
         <div id="header2"><h2>Local Attractions</h2></div>
-        <div id= "list"><ul>
-            <li>Get a Raspberry shake!</li>
-            <li>Go boating or paddleboarding</li>
-            <li>Go on amazing hikes</li>
-            <li>Have a picnic by the beach</li>
-            <li>Shop at the cute local shops</li>
-        </ul></div>
-        <div class= "pictures"><img src="https://bearlake.org/wp-content/uploads/zipz-restaurant-garden-city-utah-640x444.jpg" alt="Bear Lake Shake" width="300">
-        <img src="https://koa.com/content/campgrounds/bear-lake-trail-side/heroitems/44157heroitemsa30598ad-c875-45d1-a895-ceb8ef2199d7.jpg" alt="Bear Lake view" width="300">
-        <img src="https://www.sltrib.com/resizer/yH5twgQbWnP_IWQ-k1v8jE4wSDc=/arc-anglerfish-arc2-prod-sltrib/public/GU6JYM74PNHRLEA7ZE3G57QQGU.jpg" alt="Bear Lake Beach" width="300"></div>
+        <div id= "list">
+            <ul>
+                <li>Get a Raspberry shake!</li>
+                <li>Go boating or paddleboarding</li>
+                <li>Go on amazing hikes</li>
+                <li>Have a picnic by the beach</li>
+                <li>Shop at the cute local shops</li>
+            </ul>
+        </div>
+
+    <button id="toggleBtn" style="margin-top:15px;">Show More</button>
+    <div id="more_stuff" style="display:none; margin-top:10px;">
+        <div id="extra"><p>Bear Lake has super blue water and lots of fun things to do, like swimming and boating. 
+        Many people go there in the summertime to relax and explore.</p></div>
+
+        <img class="hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9i2sVpDi6Pq3sKls2kWKUjtjpWBSpfH9Q8g&s" width="250">
+    </div>
+</div>
+        <div class= "pictures">
+            <img class="hover" src="https://bearlake.org/wp-content/uploads/zipz-restaurant-garden-city-utah-640x444.jpg" alt="Bear Lake Shake" width="300">
+            <img class="hover" src="https://koa.com/content/campgrounds/bear-lake-trail-side/heroitems/44157heroitemsa30598ad-c875-45d1-a895-ceb8ef2199d7.jpg" alt="Bear Lake view" width="300">
+            <img class="hover" src="https://www.sltrib.com/resizer/yH5twgQbWnP_IWQ-k1v8jE4wSDc=/arc-anglerfish-arc2-prod-sltrib/public/GU6JYM74PNHRLEA7ZE3G57QQGU.jpg" alt="Bear Lake Beach" width="300"></div>
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById("toggleBtn");
+        const content = document.getElementById("more_stuff");
+
+        btn.onclick = function() {
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                btn.textContent = "Hide";
+            } else {
+                content.style.display = "none";
+                btn.textContent = "Show More";
+            }
+        };
+    </script>
     </body>
 </html>
